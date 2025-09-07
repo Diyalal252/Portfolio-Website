@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff6a95, #6a11cb);
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    /* Hero Section */
+.hero {
+     background: #ffffff;
+color: #333; /* Dark text for readability */
+padding: 60px 20px;
+text-align: center;
+
+    }
+
+
+
+
+    .hero .profile-pic {
+      width: 200px;
+      border-radius: 50%;
+      
+      margin-bottom: 20px;
+    }
+
+    .hero .highlight {
+      color: #ff6a95;
+    }
+
+    button {
+      padding: 12px 25px;
+      background: #ff6a95;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff4081;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #6a11cb;
+      margin-bottom: 20px;
+    }
+
+    /* Skills */
+    .skills-container {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .skill {
+      background: #ffefba;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #ffe259;
+      transform: translateY(-5px);
+    }
+
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Contact */
+   p{
+    text-align: center;
+      color: black;
+      margin-bottom: 20px;
+
+}
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    form button {
+      background: #6a11cb;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1> My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Replace with your own image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWm7P6PbPApYqtyWd4H_znabEA75dh2bZBig&s" alt="Profile Picture" class="profile-pic">
+    <h2>Hello, I'm <span class="highlight">DIYA LAL</span> 👋</h2>
+    <p>A Information Technology student passionate about coding & problem solving.</p>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Information Technology  student interested in software development,
+      web technologies, and problem-solving. I love building projects that
+      make an impact and learning new technologies along the way.I am passionate about exploring the world of technology. I enjoy coding, designing websites, and learning how systems work behind the scenes.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">🅲C</div>
+      <div class="skill">💻 C++</div>
+      <div class="skill">🐍 Python</div>
+      <div class="skill">🌐 HTML, CSS, JS</div>
+      <div class="skill">📊 Data Structures</div>
+      
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="https://myprojectideas.com/wp-content/uploads/2023/07/word-image-14884-3.png" alt="Project 1">
+        <h3>Hospital Management System</h3>
+        <p>A C++ project that manages details of patients,doctors,staff etc and manipulate the information according to user input.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210705224023/imgonlinecomuaresizeC6OgPxQ3lH3c5d.jpg" alt="Project 2">
+        <h3>Roc,Paper,scissors</h3>
+        <p>A simple attractive game between a user and the computer.The game is developed using basics of python.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZrQECMXyRq9IlO7BJY_xHXQ7MMMbarta1oQ&s" alt="Project 3  ">
+        <h3>Roast Bot</h3>
+        <p>A web-based roast bot that generates funny, savage, sarcastic, or polite roasts
+s.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+   <p>      I am a B.Tech IT student exploring programming,software development and problem solving,Let's connect and collaborate!</p>
+    <form>
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email address" required>
+      <textarea placeholder="your messages"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name | Computer Science Student</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("✅ Message sent! Thank you for reaching out.");
+    });
+  </script>
+</body>
+</html>
+3
